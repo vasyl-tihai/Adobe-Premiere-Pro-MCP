@@ -2,7 +2,7 @@
 
 Control Adobe Premiere Pro from Claude using the [Model Context Protocol](https://modelcontextprotocol.io). 170+ tools for editing, effects, captions, export, and more.
 
-![Claude Code controlling Premiere Pro via MCP](assets/NLSO0Nbfb0.png)
+![Claude Code controlling Premiere Pro via MCP](assets/demo.png)
 
 ## How it works
 
@@ -43,7 +43,7 @@ The installer will:
 
 ## Configuration
 
-Edit `config.json` in the project root:
+Copy `config.example.json` to `config.json` and edit:
 
 ```json
 {

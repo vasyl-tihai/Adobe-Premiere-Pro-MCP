@@ -17,6 +17,14 @@ if exist "%CEP_DIR%" (
 mklink /D "%CEP_DIR%" "%~dp0cep"
 echo [OK] Created extension symlink at %CEP_DIR%
 
+REM Create config.json from example if it doesn't exist
+if not exist "%~dp0config.json" (
+  if exist "%~dp0config.example.json" (
+    copy "%~dp0config.example.json" "%~dp0config.json" >nul
+    echo [OK] Created config.json from config.example.json
+  )
+)
+
 REM Install Node.js dependencies
 echo.
 echo Installing dependencies...
